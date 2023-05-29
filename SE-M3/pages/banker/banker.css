@@ -1,0 +1,82 @@
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/admin.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.banker .container{
+  background-color: #eee;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.banker h1{
+  color: #333;
+}
+.banker hr{
+  margin:5px 0 20px;
+  border: 2px solid #315492;
+  width: 25%;
+}
+
+.reqs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.acc-req, .credit-req, .loan-req{
+  background-color: #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 5px;
+}
+
+.acc-req span, .credit-req span, .loan-req span{
+  font-weight: 700;
+}
+
+.info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 70%;
+}
+
+.req-btns{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.req-btns button{
+  padding: 15px 25px;
+  border-radius: 5px;
+  background-color: #315492;
+  color: #fff; 
+  font-size: 16px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.req-btns button:hover{
+  background-color: #2a4a7f;
+}
+
+.reject{
+  background-color: #9f1712e6!important;
+}
+
+.reject:hover{
+  background-color: #9f1712!important;
+}

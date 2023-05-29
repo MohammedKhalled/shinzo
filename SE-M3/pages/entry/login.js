@@ -48,7 +48,7 @@ loginSubmit.onclick = (e) => {
         password: loginPassword
       }
       localStorage.setItem('client', JSON.stringify(clientData)) ;
-      window.location.href = '../admin/admin.html'
+      window.location.href = '../banker/banker.html'
     }
     else{
       loginError.innerHTML = 'Incorrect username or password'
