@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="manageCards.css">
+  <script src="https://kit.fontawesome.com/09d198dc53.js" crossorigin="anonymous" defer></script>
+  <script src="manageCards.js" defer></script>
+  <title>Manage Cards</title>
+</head>
+<body>
+  <header style="position: relative;">
+    <div class="container">
+      <h1 class="logo">ShinzoBank</h1>
+
+      <div class="user-logged" id="user-logged">
+        <div class="icons">
+          <i class="fa-solid fa-bars" id="bars" title="Menu"></i>
+          <i class="fa-solid fa-bell" id="bell" title="Notifications"></i>
+
+          <ul class="drop-down" id="drop-down">
+            <li><a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="../../index.html#serv"><i class="fa-solid fa-hand-holding-dollar"></i> Services</a></li>
+            <li><a href="../manageAcc/manageAcc.html"><i class="fa-sharp fa-solid fa-users"></i> Manage Accounts</a></li>
+            <li><a href="#"><i class="fa-solid fa-credit-card"></i> Manage Cards</a></li>
+            <li><a href="../../index.html#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="../report/report.html"><i class="fa-solid fa-bug"></i> Report Issue</a></li>
+            <li><a href="../reminders/reminders.html"><i class="fa-solid fa-stopwatch"></i> Reminders</a></li>
+            <li><a href="../../index.html#contact"><i class="fa-solid fa-at"></i> Contact</a></li>
+          </ul>
+
+          <ul class="notifi" id="notifi">
+            <li>
+              <h3>Reported issue</h3>
+              <p>We are happy to notify you that the issue you reported has been resolved, thank you.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your credit card bill before 10/10/2023.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your loan installment before 12/12/2023.</p>
+            </li>
+            <li>
+              <h3>Announcement!</h3>
+              <p>We are thrilled to announce that we have launched our new mobile app, Make sure to try it!</p>
+            </li>
+            <li>
+              <h3>Credit card application</h3>
+              <p>Your credit card application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Loan application</h3>
+              <p>Your loan application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Bank account</h3>
+              <p>Your bank account has been opened successfully, thank you for choosing us.</p>
+            </li>
+          </ul>
+        </div>
+        <span>client@shinzo.com <i class="fa-solid fa-right-from-bracket" id="logout" title="Logout"></i></span>        
+      </div>
+    </div>
+  </header>
+  <div class="manage-cards">
+    <div class="container">
+      <div class="choose-cont">
+        <h1>Choose a card</h1>
+        <hr>
+        <div class="cards">
+          <div class="card">
+            <img src="../../images/credit-card.png" alt="">
+            <div class="card-info">
+              <p>Card Number: 1234 5678 9012 3456</p>
+              <p>Card Holder: Client One</p>
+              <p>Expiration Date: 10/10/2023</p>
+              <p>CVV: 123</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../../images/credit-card.png" alt="">
+            <div class="card-info">
+              <p>Card Number: 3233 5578 9412 3552</p>
+              <p>Card Holder: Client One</p>
+              <p>Expiration Date: 11/12/2023</p>
+              <p>CVV: 723</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-options">
+        <h1>Transactions</h1>
+        <hr>
+        <div class="transactions">
+          <div class="transaction">
+            <i class="fa-solid fa-right-left"></i>
+            <div class="transaction-info">
+              <p><span>Transaction ID:</span> 123456789</p>
+              <p><span>Transaction Date:</span> 10/10/2023</p>
+              <p><span>Transaction Amount:</span> $1000</p>
+              <p><span>Transaction Type:</span> Deposit</p>
+              <p><span>Merchant:</span> ABC Store</p>
+            </div>
+          </div>
+          <div class="transaction">
+            <i class="fa-solid fa-right-left"></i>
+            <div class="transaction-info">
+              <p><span>Transaction ID:</span> 987654321</p>
+              <p><span>Transaction Date:</span> 11/10/2023</p>
+              <p><span>Transaction Amount:</span> $500</p>
+              <p><span>Transaction Type:</span> Withdraw</p>
+              <p><span>Merchant:</span> XYZ Supermarket</p>
+            </div>
+          </div>
+          <div class="transaction">
+            <i class="fa-solid fa-right-left"></i>
+            <div class="transaction-info">
+              <p><span>Transaction ID:</span> 987654321</p>
+              <p><span>Transaction Date:</span> 11/10/2023</p>
+              <p><span>Transaction Amount:</span> $500</p>
+              <p><span>Transaction Type:</span> Deposit</p>
+              <p><span>Merchant:</span> XYZ Supermarket</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Points</h1>
+      <hr>
+      <div class="points">
+        <h3>40,000 Point</h3>
+        <p>You have 40,000 point on this card which worth $2,000</p>
+        <button>Redeem</button>
+      </div>
+      <h1>Pay for it</h1>
+      <hr>
+      <div class="pay">
+        <div class="radios">
+          <div>
+            <input type="radio" name="type" id="partially" checked>
+            <label for="partially">Pay Partially</label>
+          </div>
+          <div>
+            <input type="radio" name="type" id="fully">
+            <label for="fully">Pay Fully</label>
+        </div>
+      </div>
+      <div class="input-wrap">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+      </div>
+      <button>Pay</button>
+    </div>
+    <h1>Stop/Replace</h1>
+    <hr>
+    <div class="report">
+      <div class="input-wrap">
+        <label for="reason">Reason</label>
+        <select name="reason" id="reason">
+          <option value="" disabled selected>Select a reason</option>
+          <option value="lost">Lost</option>
+          <option value="stolen">Stolen</option>
+          <option value="damaged">Damaged</option>
+        </select>
+      </div>
+      <div class="input-wrap">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+      </div>
+      <div class="replacement">
+        <label>Would you like to replace it?</label>
+        <div class="yes-no">
+          <div>
+            <input type="radio" name="replace" id="yes">
+            <label for="yes">Yes</label>
+          </div>
+          <div>
+            <input type="radio" name="replace" id="no">
+            <label for="no">No</label>
+          </div>
+        </div>
+      </div>
+      <button>Report</button>
+    </div>
+  </div>
+  <div class="footer">&copy; 2023 <span>ShinzoBank</span> All Right Reserved</div>
+
+</body>
+</html>

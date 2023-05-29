@@ -1,0 +1,265 @@
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/credit-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.manage-cards .container{
+  background-color: #eeeeeec9;
+  padding: 25px;
+  border-radius: 10px;
+  min-height: calc(100vh - 160px);
+  margin: 50px auto;
+  backdrop-filter: blur(3px);
+}
+
+.choose-cont{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.choose-cont .cards{
+  display: flex;
+  gap: 20px;
+}
+
+.choose-cont .cards .card{
+  width: 300px;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.choose-cont .cards .card:hover{
+  transform: scale(1.02);
+}
+
+.choose-cont .cards .card p{
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-options{
+  margin-bottom: 30px;
+}
+
+.choose-cont img{
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 12px;
+  background-color: #315492;
+  margin-bottom: 10px;
+}
+
+.transactions{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transactions .transaction{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ddd;
+  transition: all 0.3s ease;
+}
+
+.transactions .transaction:hover{
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.transaction i{
+  font-size: 30px;
+  color: #333;
+  margin-right: 20px;
+}
+
+.transaction .transaction-info{
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  gap: 5px;
+  column-gap: 20px;
+}
+
+.transaction .transaction-info span{
+  font-weight: 700;
+}
+
+.manage-cards h1{
+  color: #333;
+}
+.manage-cards hr{
+  margin:5px 0 20px;
+  border: 2px solid #315492;
+  width: 25%;
+}
+
+.points{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.points h3{
+  font-size: 50px;
+  color: #315492;
+}
+
+.points p{
+  font-size: 18px;
+  color: #333;
+}
+
+.points button{
+  padding: 15px 25px;
+  border-radius: 5px;
+  background-color: #315492;
+  color: #fff; 
+  font-size: 16px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.points button:hover{
+  background-color: #2a4a7f;
+}
+
+.pay{
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.pay .radios{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.pay label, .report label{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.input-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.pay .input-wrap input, .report .input-wrap select{
+  padding: 13px 10px;
+  border-radius: 5px;
+  border: 2px solid #bbb;
+  outline: none;
+  width: 350px;
+  font-size: 16px;
+}
+
+.report .input-wrap textarea{
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid #bbb;
+  outline: none;
+  width: 350px;
+  font-size: 16px;
+  resize: none;
+  font-family: 'open sans' , sans-serif;
+  height: 100px;
+}
+
+.pay button{
+  padding: 15px 40px;
+  border-radius: 5px;
+  background-color: #315492;
+  color: #fff; 
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.radios div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.radios div label{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.radios input[type="radio"]{
+  width: 20px;
+  height: 20px;
+}
+
+.report{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;  
+}
+
+.replacement{
+  display: flex;
+  gap: 30px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.replacement .yes-no{
+  display: flex;
+  gap: 15px;
+}
+
+.replacement .yes-no div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.replacement .yes-no div input[type="radio"]{
+  width: 17px;
+  height: 17px;
+}
+
+.report button{
+  padding: 15px 40px;
+  border-radius: 5px;
+  background-color: #315492;
+  color: #fff; 
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+} 
+
+
+
+
