@@ -43,6 +43,12 @@ loginSubmit.onclick = (e) => {
   } else if(banker){
     if(loginEmail == bankerEmail && loginPassword == bankerPassword){
       console.log('banker logged in')
+      let clientData = {
+        email: loginEmail,
+        password: loginPassword
+      }
+      localStorage.setItem('client', JSON.stringify(clientData)) ;
+      window.location.href = '../admin/admin.html'
     }
     else{
       loginError.innerHTML = 'Incorrect username or password'
@@ -51,6 +57,12 @@ loginSubmit.onclick = (e) => {
   } else if(admin){
     if(loginEmail == adminEmail && loginPassword == adminPassword){
       console.log('admin logged in')
+      let clientData = {
+        email: loginEmail,
+        password: loginPassword
+      }
+      localStorage.setItem('client', JSON.stringify(clientData)) ;
+      window.location.href = '../admin/admin.html'
     }
     else{
       loginError.innerText = 'Incorrect username or password'

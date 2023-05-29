@@ -1,0 +1,83 @@
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/admin.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.issues .container{
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.issues h1{
+  color: #333;
+}
+.issues hr{
+  margin:5px 0 20px;
+  border: 2px solid #315492;
+  width: 25%;
+}
+
+.issues-cont{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.issue{
+  background-color: #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 5px;
+}
+
+.issue span{
+  font-weight: 700;
+}
+
+.issue h2{
+  color: #333;
+  font-size: 20px;
+}
+
+.issue p{
+  font-size: 17px;
+}
+
+.issue .btns{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.issue .btns button{
+  padding: 15px 25px;
+  border-radius: 5px;
+  background-color: #315492;
+  color: #fff; 
+  font-size: 16px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.issue .btns button:hover{
+  background-color: #2a4a7f;
+}
+
+.delete{
+  background-color: #9f1712e6!important;
+}
+
+.delete:hover{
+  background-color: #9f1712!important;
+}
