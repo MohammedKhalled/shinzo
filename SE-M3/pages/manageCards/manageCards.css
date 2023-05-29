@@ -85,11 +85,14 @@ body{
 }
 
 .transaction .transaction-info{
-  display: flex;
-  flex-wrap: wrap;
-  width: 85%;
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 70%;
   gap: 5px;
   column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .transaction .transaction-info span{

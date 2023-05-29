@@ -1,0 +1,18 @@
+.close-btn{
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 60px;
+  background-color: darkred;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.close-btn:hover{
+  background-color: rgb(176, 1, 1);
+}
