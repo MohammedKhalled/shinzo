@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/09d198dc53.js" crossorigin="anonymous"></script>
+  <script src="login.js" defer></script>
+  <link rel="stylesheet" href="entry.css">
+  <title>login</title>
+</head>
+<body>
+  <div class='login-cont'>
+    <div class='my-form'>
+      <h1>login</h1>
+      <form>
+        <div class='entry-input-wraper'>
+          <input
+            class="txt-input"
+            id="login-email"
+            type="email"
+            name="email" 
+            placeholder='Email' 
+            autoComplete='off'
+          />
+          <i class="fa-solid fa-envelope entry-icon"></i>
+
+        </div>
+
+        <div class='entry-input-wraper'>
+          <input
+            class="txt-input"
+            id="login-password"
+            type="password" 
+            name="password" 
+            placeholder='Password' 
+          />
+          <i class="fa-solid fa-lock entry-icon" ></i>
+        </div>
+
+        <div class="entry-input-wraper">
+          <label for="login-type" style="display: block;">Log in as:</label>
+          <div class="radio-wraper">
+            <div class="client">
+              <input type="radio" id="client" name="login-type" value="client">
+              <label for="client">Client</label>
+            </div>
+            <div class="banker">
+              <input type="radio" id="banker" name="login-type" value="banker" >
+              <label for="banker">Banker</label>
+            </div>
+            <div class="admin">
+              <input type="radio" id="admin" name="login-type" value="admin" >
+              <label for="admin">Admin</label>
+            </div>
+          </div>
+        </div>
+        <div class="error" id="login-error">Please fill in all required fields</div>
+        <input type="submit" id="login-submit" value="Log in" class="button">
+        <span class='my-link'>Don't have an account? <a href="signup.html">Sign up</a></span>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

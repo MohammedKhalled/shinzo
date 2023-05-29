@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="applyCredit.css">
+  <script src="https://kit.fontawesome.com/09d198dc53.js" crossorigin="anonymous" defer></script>
+  <script src="../openAcc/openAcc.js" defer></script>
+  <title>Credit card application</title>
+</head>
+<body>
+  <header style="position: relative;">
+    <div class="container">
+      <h1 class="logo">ShinzoBank</h1>
+
+      <div class="user-logged" id="user-logged">
+        <div class="icons">
+          <i class="fa-solid fa-bars" id="bars" title="Menu"></i>
+          <i class="fa-solid fa-bell" id="bell" title="Notifications"></i>
+
+          <ul class="drop-down" id="drop-down">
+            <li><a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="../../index.html#serv"><i class="fa-solid fa-hand-holding-dollar"></i> Services</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-users"></i> Manage Accounts</a></li>
+            <li><a href="#"><i class="fa-solid fa-credit-card"></i> Manage Cards</a></li>
+            <li><a href="../../index.html#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="../report/report.html"><i class="fa-solid fa-bug"></i> Report Issue</a></li>
+            <li><a href="../reminders/reminders.html"><i class="fa-solid fa-stopwatch"></i> Reminders</a></li>
+            <li><a href="../../index.html#contact"><i class="fa-solid fa-at"></i> Contact</a></li>
+          </ul>
+
+          <ul class="notifi" id="notifi">
+            <li>
+              <h3>Reported issue</h3>
+              <p>We are happy to notify you that the issue you reported has been resolved, thank you.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your credit card bill before 10/10/2023.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your loan installment before 12/12/2023.</p>
+            </li>
+            <li>
+              <h3>Announcement!</h3>
+              <p>We are thrilled to announce that we have launched our new mobile app, Make sure to try it!</p>
+            </li>
+            <li>
+              <h3>Credit card application</h3>
+              <p>Your credit card application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Loan application</h3>
+              <p>Your loan application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Bank account</h3>
+              <p>Your bank account has been opened successfully, thank you for choosing us.</p>
+            </li>
+          </ul>
+        </div>
+        <span>client@shinzo.com <i class="fa-solid fa-right-from-bracket" id="logout" title="Logout"></i></span>        
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="credit-app">
+      <h1>Earn 75,000 Points</h1>
+      <p>once you spend $2,000 on purchases within the first 3 months from activation date</p>
+      <hr>
+      <form>
+        <div class="section">
+          <h2>Personal Information</h2>
+          <div class="inputs">
+            <div class="input-wrapper">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full-name" value="Client One" disabled>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required value="client@shinzo.com" disabled>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="nationality">Nationality:</label>
+              <select id="nationality" name="nationality" required>
+                <option value="" disabled selected>Select your nationality</option>
+                <option value="AR">Argentina</option>
+                <option value="AU">Australia</option>
+                <option value="BR">Brazil</option>
+                <option value="CA">Canada</option>
+                <option value="CN">China</option>
+                <option value="EG">Egypt</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="IN">India</option>
+                <option value="IT">Italy</option>
+                <option value="JP">Japan</option>
+                <option value="MX">Mexico</option>
+                <option value="RU">Russia</option>
+                <option value="SA">Saudi Arabia</option>
+                <option value="ZA">South Africa</option>
+                <option value="ES">Spain</option>
+                <option value="SE">Sweden</option>
+                <option value="TR">Turkey</option>
+                <option value="GB">United Kingdom</option>
+                <option value="US">United States</option>
+              </select>
+              <span class="error-msg">this field is required</span>
+            </div>
+            <div class="input-wrapper">
+                <label for="date-of-birth">Date of Birth</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" required>
+                <span class="error-msg">this field is required</span>
+            </div>
+            <div class="input-wrapper">
+                <label for="national-id">National ID</label>
+                <input type="number" id="national-id" name="national-id" required placeholder="Eg: 12344556677654">
+                <span class="error-msg">this field is required</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Financial Information</h2>
+          <div class="inputs">
+            <div class="input-wrapper">
+              <label for="gross-monthly-income">Gross Monthly Income</label>
+              <input type="number" id="gross-monthly-income" name="gross-monthly-income" required placeholder="Eg: 2000">
+              <span class="error-msg">this field is required</span>
+            </div>
+            <div class="input-wrapper">
+              <label for="mortage-payment-monthly">Mortage Payment Monthly</label>
+              <input type="number" id="mortage-payment-monthly" name="mortage-payment-monthly" required placeholder="Eg: 187000">
+              <span class="error-msg">this field is required</span>
+            </div>
+            <div class="input-wrapper">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required>
+              <span class="error-msg">this field is required</span>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <input type="submit" value="Apply" id="submit-request">
+          <p>By clicking Apply, you agree to our <a href="">Terms and Conditions</a></p>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="req-pending-wrapper" id="pending">
+    <div class="request-pending">
+      <i class="fa-solid fa-circle-notch fa-spin"></i>
+      <h2>Your request is pending</h2>
+      <p>You will recieve a notification when your request is resolved</p>
+      <button id="ok">OK</button>
+    </div>
+  </div>
+  <div class="footer">&copy; 2023 <span>ShinzoBank</span> All Right Reserved</div>
+</body>
+</html>

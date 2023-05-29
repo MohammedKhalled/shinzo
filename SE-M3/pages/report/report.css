@@ -1,0 +1,23 @@
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/report-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  backdrop-filter: blur(3px);
+}
+
+.wraap{
+  min-height: calc(100vh - 160px);
+  padding: 39px;
+}
+
+.report{
+  position: unset;
+  margin: 0 auto ;
+  transform: unset;
+}
+
+.footer{
+  position: unset;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="entry.css">
+  <script src="https://kit.fontawesome.com/09d198dc53.js" crossorigin="anonymous"></script>
+  <script src="signup.js" defer></script>
+  <title>Register</title>
+</head>
+<body>
+  <div class="signup-container">
+    <div class="image-half"></div>
+    <div class="form-half">
+      <h1>Register</h1>
+      <form class="signup-form" id="signup-form">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required  placeholder="Eg: John Doe">
+    
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Eg: johndoe@example.com">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Use strong one">
+    
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Eg: 01001240213">
+    
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="" selected disabled>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <label for="bank-account" style="font-size: 16px;">Do you have an existing bank account?</label>
+        <div class="radio-wraper">
+          <div class="yes">
+            <input type="radio" id="bank-account-yes" name="bank-account" value="yes">
+            <label for="bank-account-yes">Yes</label>
+          </div>
+          <div class="no">
+            <input type="radio" id="bank-account-no" name="bank-account" value="no" >
+            <label for="bank-account-no">No</label>
+          </div>
+        </div>
+    
+        <label for="account-number" class="optional">Bank Account Number (if applicable)</label>
+        <input type="text" id="account-number" name="account-number" placeholder="Eg: 1234567890">
+        <div class="error" id="error">Please fill in all required fields</div>
+        <input type="submit" value="Submit" id="submit">
+        <span class='my-link'>Already have an account? <a href="login.html">Log in</a></span>
+
+      </form>
+    </div>
+    <div class="overly" id="overly">
+      <div class="success" id="success">
+        <h1>Successfully registered!</h1>
+        <span><i class="fa-solid fa-check fa-beat fa-2xs"></i></span>
+        <p>Go to login page <a href="login.html">here</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

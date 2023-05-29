@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="billPayment.css">
+  <script src="https://kit.fontawesome.com/09d198dc53.js" crossorigin="anonymous" defer></script>
+  <script src="../openAcc/openAcc.js" defer></script>
+  <title>Bill Payment</title>
+</head>
+<body>
+  <header style="position: relative;">
+    <div class="container">
+      <h1 class="logo">ShinzoBank</h1>
+
+      <div class="user-logged" id="user-logged">
+        <div class="icons">
+          <i class="fa-solid fa-bars" id="bars" title="Menu"></i>
+          <i class="fa-solid fa-bell" id="bell" title="Notifications"></i>
+
+          <ul class="drop-down" id="drop-down">
+            <li><a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="../../index.html#serv"><i class="fa-solid fa-hand-holding-dollar"></i> Services</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-users"></i> Manage Accounts</a></li>
+            <li><a href="#"><i class="fa-solid fa-credit-card"></i> Manage Cards</a></li>
+            <li><a href="../../index.html#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="../report/report.html"><i class="fa-solid fa-bug"></i> Report Issue</a></li>
+            <li><a href="../reminders/reminders.html"><i class="fa-solid fa-stopwatch"></i> Reminders</a></li>
+            <li><a href="../../index.html#contact"><i class="fa-solid fa-at"></i> Contact</a></li>
+          </ul>
+
+          <ul class="notifi" id="notifi">
+            <li>
+              <h3>Reported issue</h3>
+              <p>We are happy to notify you that the issue you reported has been resolved, thank you.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your credit card bill before 10/10/2023.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your loan installment before 12/12/2023.</p>
+            </li>
+            <li>
+              <h3>Announcement!</h3>
+              <p>We are thrilled to announce that we have launched our new mobile app, Make sure to try it!</p>
+            </li>
+            <li>
+              <h3>Credit card application</h3>
+              <p>Your credit card application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Loan application</h3>
+              <p>Your loan application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Bank account</h3>
+              <p>Your bank account has been opened successfully, thank you for choosing us.</p>
+            </li>
+          </ul>
+        </div>
+        <span>client@shinzo.com <i class="fa-solid fa-right-from-bracket" id="logout" title="Logout"></i></span>        
+      </div>
+    </div>
+  </header>
+
+  <div class="bill-payment">
+      <h1>Bill Payment</h1>
+      <p>Fast, easy and secure!</p>
+      <hr>
+      <form>
+        <div class="form-control">
+          <label for="bill-type">Bill Type</label>
+          <select name="bill-type" id="bill-type">
+            <option value="" disabled selected>Choose bill type</option>
+            <option value="electricity">Electricity</option>
+            <option value="water">Water</option>
+            <option value="gas">Gas</option>
+            <option value="phone"> Telephone</option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label for="bill-number">Bill Number</label>
+          <input type="number" name="bill-number" id="bill-number" placeholder="Enter bill number">
+        </div>
+
+        <div class="form-control">
+          <label for="amount">Amount</label>
+          <input type="number" name="amount" id="amount" placeholder="Enter amount">
+        </div>
+
+        <div class="form-control">
+          <label for="account">Account</label>
+          <select name="account" id="account">
+            <option value="" selected disabled>Choose an account to pay from</option>
+            <option value="first">Saving -- 1010101230345</option>
+          </select>
+        </div>
+
+        <div class="form-control special">
+          <div class="done" id="pending">
+            <span><i class="fa-solid fa-check fa-beat fa-2xs"></i></span>
+            <p>Bill payment done successfully!</p>
+          </div>
+          <input type="submit" value="Pay" id="submit-request">
+        </div>
+      </form>
+    </div>
+    
+    <div class="footer">&copy; 2023 <span>ShinzoBank</span> All Right Reserved</div>
+
+</body>
+</html>

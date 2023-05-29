@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/09d198dc53.js" crossorigin="anonymous"></script>
+  <script src="js/app.js" defer></script>
+  <title>ShinzoBank</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">ShinzoBank</h1>
+      <ul class="links" id="links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#serv">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="actions" id="actions">
+        <a href="pages/entry/login.html" class="login-btn" id="login-btn">Login</a>
+        <a href="pages/entry/signup.html" class="btn" id="register-btn">Create account</a>
+      </div>
+
+      <div class="user-logged" id="user-logged">
+        <div class="icons">
+          <i class="fa-solid fa-bars" id="bars" title="Menu"></i>
+          <i class="fa-solid fa-bell" id="bell" title="Notifications"></i>
+
+          <ul class="drop-down" id="drop-down">
+            <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#serv"><i class="fa-solid fa-hand-holding-dollar"></i> Services</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-users"></i> Manage Accounts</a></li>
+            <li><a href="#"><i class="fa-solid fa-credit-card"></i> Manage Cards</a></li>
+            <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="pages/report/report.html"><i class="fa-solid fa-bug"></i> Report Issue</a></li>
+            <li><a href="pages/reminders/reminders.html"><i class="fa-solid fa-stopwatch"></i> Reminders</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-at"></i> Contact</a></li>
+          </ul>
+
+          <ul class="notifi" id="notifi">
+            <li>
+              <h3>Reported issue</h3>
+              <p>We are happy to notify you that the issue you reported has been resolved, thank you.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your credit card bill before 10/10/2023.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your loan installment before 12/12/2023.</p>
+            </li>
+            <li>
+              <h3>Announcement!</h3>
+              <p>We are thrilled to announce that we have launched our new mobile app, Make sure to try it!</p>
+            </li>
+            <li>
+              <h3>Credit card application</h3>
+              <p>Your credit card application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Loan application</h3>
+              <p>Your loan application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Bank account</h3>
+              <p>Your bank account has been opened successfully, thank you for choosing us.</p>
+            </li>
+          </ul>
+        </div>
+        <span>client@shinzo.com <i class="fa-solid fa-right-from-bracket" id="logout" title="Logout"></i></span>        
+      </div>
+    </div>
+  </header>
+
+  <div class="landing-page">
+    <div class="landing-wraper">
+      <h1>Banking Simplified: Welcome to <span>ShinzoBank</span></h1>
+      <p>At ShinzoBank, we are dedicated to providing exceptional banking
+        services and tailored solutions. Whether you're an individual or a business, 
+        we're here to help you achieve your financial goals.
+      </p>
+      <a class="get-started" href="pages/entry/signup.html" id="get-started-btn">Get started now!</a>
+    </div>
+  </div>
+  
+  <div class="services-section" id="serv">
+    <div class="container">
+    <h1 class="title">Services</h1>
+      <div class="services-wraper">
+        <i class="fa-solid fa-angle-left" id="left-icon"></i>
+        <i class="fa-solid fa-angle-right" id="right-icon"></i>
+        <div class="services" id="services">
+          <div class="service">
+            <img src="images/open-acc.jpg" alt="transfer">
+            <h2>Open new account</h2>
+            <p>Start your financial journey with us and open a new account for seamless banking experiences.</p>
+            <a href="pages/openAcc/opanAcc.html">Try it!</a>
+          </div>
+          <div class="service">
+            <img src="images/credit-card.jpg" alt="withdraw">
+            <h2>Apply for a credit card</h2>
+            <p>Elevate your spending power by applying for a credit card with us.</p>
+            <a href="pages/applyCredit/applyCredit.html">Try it!</a>
+          </div>
+          <div class="service">
+            <img src="images/loan.jpg" alt="deposit">
+            <h2>Apply for a loan</h2>
+            <p>Realize your dreams and turn your aspirations into reality with our tailored loan options,</p>
+            <a href="pages/applyLoan/applyLoan.html">Try it!</a>
+          </div>
+          <div class="service">
+            <img src="images/money-transfer.jpg" alt="deposit">
+            <h2>Transfer money</h2>
+            <p>Effortlessly send money worldwide with our seamless money transfer services.</p>
+            <a href="pages/transferMoney/transferMoney.html">Try it!</a>
+          </div>
+          <div class="service">
+            <img src="images/bill-payment.jpg" alt="deposit">
+            <h2>Bill payment</h2>
+            <p>Simplify your life and manage your bills easily with our convenient online bill payment services.</p>
+            <a href="pages/billPayment/billPayment.html">Try it!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about" id="about">
+    <div class="container">
+      <h1 class="title">About</h1>
+      <div class="wraper">
+        <div class="image"></div>
+        <div class="text">
+          <p>
+            ShinzoBank is a leading financial institution known for its unwavering commitment to customer satisfaction
+            and innovative banking solutions. With a strong emphasis on technology-driven services, 
+            ShinzoBank offers a wide range of banking products and personalized financial solutions to individuals 
+            and businesses alike. From seamless online banking platforms to cutting-edge mobile applications, 
+            ShinzoBank provides customers with convenient access to their accounts, effortless money management, 
+            and secure transactions
+          </p>
+          <hr>
+          <p>ShinzoBank is dedicated to empowering its customers to achieve their financial goals with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="title">Contact</div>
+      <div class="info">
+        <p class="label">Feel free to drop us a line at:</p>
+        <a href="mailto:ShinzoBank@mail.com?subject=Contact" class="link">ShinzoBank@mail.com</a>
+        <div class="social">
+          Find Us On Social Media
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">&copy; 2023 <span>ShinzoBank</span> All Right Reserved</div>
+</body>
+</html>

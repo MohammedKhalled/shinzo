@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="transferMoney.css">
+  <script src="https://kit.fontawesome.com/09d198dc53.js" crossorigin="anonymous" defer></script>
+  <script src="transferMoney.js" defer></script>
+  <title>Transfer Money</title>
+</head>
+<body>
+  <header style="position: relative;">
+    <div class="container">
+      <h1 class="logo">ShinzoBank</h1>
+
+      <div class="user-logged" id="user-logged">
+        <div class="icons">
+          <i class="fa-solid fa-bars" id="bars" title="Menu"></i>
+          <i class="fa-solid fa-bell" id="bell" title="Notifications"></i>
+
+          <ul class="drop-down" id="drop-down">
+            <li><a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="../../index.html#serv"><i class="fa-solid fa-hand-holding-dollar"></i> Services</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-users"></i> Manage Accounts</a></li>
+            <li><a href="#"><i class="fa-solid fa-credit-card"></i> Manage Cards</a></li>
+            <li><a href="../../index.html#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="../report/report.html"><i class="fa-solid fa-bug"></i> Report Issue</a></li>
+            <li><a href="../reminders/reminders.html"><i class="fa-solid fa-stopwatch"></i> Reminders</a></li>
+            <li><a href="../../index.html#contact"><i class="fa-solid fa-at"></i> Contact</a></li>
+          </ul>
+
+          <ul class="notifi" id="notifi">
+            <li>
+              <h3>Reported issue</h3>
+              <p>We are happy to notify you that the issue you reported has been resolved, thank you.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your credit card bill before 10/10/2023.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your loan installment before 12/12/2023.</p>
+            </li>
+            <li>
+              <h3>Announcement!</h3>
+              <p>We are thrilled to announce that we have launched our new mobile app, Make sure to try it!</p>
+            </li>
+            <li>
+              <h3>Credit card application</h3>
+              <p>Your credit card application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Loan application</h3>
+              <p>Your loan application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Bank account</h3>
+              <p>Your bank account has been opened successfully, thank you for choosing us.</p>
+            </li>
+          </ul>
+        </div>
+        <span>client@shinzo.com <i class="fa-solid fa-right-from-bracket" id="logout" title="Logout"></i></span>        
+      </div>
+    </div>
+  </header>
+
+  <div class="transfer-money">
+    <div class="container">
+      <h1>Transfer Money</h1>
+      <p>Please fill in all required fields</p>
+      <hr>
+      <form>
+        <div class="transfer-type">
+          <div class="radios">
+            <div>
+              <input type="radio" id="internal" name="transfer-type" checked>
+              <label for="internal">Internal</label>
+            </div>
+            <div>
+              <input type="radio" id="domestic" name="transfer-type">
+              <label for="domestic">Domestic</label>
+            </div>
+            <div>
+              <input type="radio" id="international" name="transfer-type">
+              <label for="international">International</label>
+            </div>  
+          </div>
+        </div>
+        <div class="inputs">
+          <div class="input-wrapper">
+            <label for="from">From Account</label>
+            <select name="account" id="account">
+              <option value="" selected disabled>Select sending account</option>
+              <option value="first">Saving -- 1010101230345</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="beneficiary-account-no">Beneficiary Account No.</label>
+            <input type="number" id="beneficiary-account-no" placeholder="Eg: 1010101243345">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="beneficiary-name">Beneficiary Name</label>
+            <input type="text" id="beneficiary-name" placeholder="Eg: John Doe">
+          </div>
+
+          <div class="input-wrapper" id="beneficiary-bank-input">
+            <label for="beneficiary-bank">Beneficiary Bank</label>
+            <input type="text" id="beneficiary-bank" placeholder="Eg: Commercial International Bank">
+          </div>
+
+          <div class="input-wrapper" id="swift-code-input">
+            <label for="swift-code">SWIFT Code</label>
+            <input type="text" id="swift-code" name="swift-code" required placeholder="Eg: AAAA-BB-CC-123">
+          </div>
+          <div class="input-wrapper" id="iban-input">
+            <label for="iban">IBAN</label>
+            <input type="text" id="iban" name="iban" required placeholder="Eg: AT483200000012345864">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="amount">Transfer Amount</label>
+            <input type="number" id="amount" placeholder="Eg: 10000">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="desc">Description</label>
+            <input type="text" id="desc" placeholder="Eg: personal">
+          </div>
+
+        </div>
+
+        <div class="submit-btn">
+          
+          <input type="submit" value="Transfer" id="submit">
+          <div class="success-msg" id="success-msg">
+            <span><i class="fa-solid fa-check fa-beat fa-2xs"></i></span>
+            <p>Money transfered successfully!</p>
+          </div>
+          <p id="terms">By clicking Transfer, you agree to our <a href="">Terms and Conditions</a></p>
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <div class="footer">&copy; 2023 <span>ShinzoBank</span> All Right Reserved</div>
+
+</body>
+</html>

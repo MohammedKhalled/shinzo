@@ -1,0 +1,163 @@
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/bill-payment-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  backdrop-filter: blur(3px);
+}
+
+.transfer-money .container{
+  background-color: #eee;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 860px;
+  margin: 50px auto;
+}
+
+.transfer-money h1{
+  color: #222;
+}
+
+.transfer-money p{
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.transfer-money hr{
+  margin: 15px 0;
+  border: 1px solid #0170b1;
+  width: 60%;
+}
+
+.transfer-money .transfer-type{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+
+.transfer-money .transfer-type .radios{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.transfer-money .transfer-type .radios div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.transfer-money .transfer-type input[type="radio"]{
+  width: 18px;
+  height: 18px;
+}
+
+/* complete here */
+
+
+.transfer-money .inputs{
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column;   */
+  gap: 10px;
+}
+
+.transfer-money .input-wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.transfer-money .input-wrapper label{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.transfer-money .input-wrapper input, .transfer-money .input-wrapper select{
+  padding: 13px 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  outline: none;
+  width: 400px;
+  font-size: 16px;
+}
+
+.transfer-money .input-wrapper input:focus, .transfer-money .input-wrapper select:focus{
+  border: 2px solid var(--main-color);
+}
+
+.transfer-money .input-wrapper label::after{
+  content: "*";
+  color: red;
+  font-size: 15px;
+  margin-left: 3px;
+}
+
+.transfer-money .submit-btn{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.submit-btn p{
+  margin: 0;
+  font-size: 14px;
+}
+
+.submit-btn p a{
+  color: var(--main-color);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.transfer-money input[type="submit"]{
+  padding: 15px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+.success-msg{
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.success-msg span{
+  background-color: darkgreen;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.success-msg p{
+  font-size: 16px;
+  color: darkgreen;
+}
+
+.input-error{
+  border: 1px solid red!important;
+}

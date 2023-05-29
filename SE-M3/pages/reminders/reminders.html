@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="reminders.css">
+  <script src="https://kit.fontawesome.com/09d198dc53.js" crossorigin="anonymous" defer></script>
+  <script src="reminders.js" defer></script>
+  <title>Reminders</title>
+</head>
+<body>
+  <header style="position: relative;">
+    <div class="container">
+      <h1 class="logo">ShinzoBank</h1>
+
+      <div class="user-logged" id="user-logged">
+        <div class="icons">
+          <i class="fa-solid fa-bars" id="bars" title="Menu"></i>
+          <i class="fa-solid fa-bell" id="bell" title="Notifications"></i>
+
+          <ul class="drop-down" id="drop-down">
+            <li><a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="../../index.html#serv"><i class="fa-solid fa-hand-holding-dollar"></i> Services</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-users"></i> Manage Accounts</a></li>
+            <li><a href="#"><i class="fa-solid fa-credit-card"></i> Manage Cards</a></li>
+            <li><a href="../../index.html#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="../report/report.html"><i class="fa-solid fa-bug"></i> Report Issue</a></li>
+            <li><a href="#"><i class="fa-solid fa-stopwatch"></i> Reminders</a></li>
+            <li><a href="../../index.html#contact"><i class="fa-solid fa-at"></i> Contact</a></li>
+          </ul>
+
+          <ul class="notifi" id="notifi">
+            <li>
+              <h3>Reported issue</h3>
+              <p>We are happy to notify you that the issue you reported has been resolved, thank you.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your credit card bill before 10/10/2023.</p>
+            </li>
+            <li>
+              <h3>Reminder!</h3>
+              <p>Don't forget to pay your loan installment before 12/12/2023.</p>
+            </li>
+            <li>
+              <h3>Announcement!</h3>
+              <p>We are thrilled to announce that we have launched our new mobile app, Make sure to try it!</p>
+            </li>
+            <li>
+              <h3>Credit card application</h3>
+              <p>Your credit card application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Loan application</h3>
+              <p>Your loan application has been approved, thank you for choosing us.</p>
+            </li>
+            <li>
+              <h3>Bank account</h3>
+              <p>Your bank account has been opened successfully, thank you for choosing us.</p>
+            </li>
+          </ul>
+        </div>
+        <span>client@shinzo.com <i class="fa-solid fa-right-from-bracket" id="logout" title="Logout"></i></span>        
+      </div>
+    </div>
+  </header>
+
+  <section class="reminders">
+    <div class="container">
+      <div class="set-reminder-wrap" >
+        <div class="set-reminder">
+          <h2 class="subtitle">Set New Reminder</h2>
+        <form>
+          <div style="display: flex; gap: 10px; width: 100%;">
+            <div class="reminder-input" style="width: calc(50% - 5px);">
+              <label for="reminder-name">Reminder Name</label>
+              <input type="text" id="reminder-name" placeholder="Reminder Name">
+            </div>
+            <div class="reminder-input" style="width: calc(50% - 5px);">
+              <label for="reminder-date">Reminder Date</label>
+              <input type="datetime-local" id="reminder-date">
+            </div>
+          </div>
+          <div class="reminder-input" style="width: 100%;">
+            <label for="reminder-desc">Reminder Description</label>
+            <textarea name="reminder-desc" id="reminder-desc" cols="30" rows="10" placeholder="Reminder Description"></textarea>
+          </div>
+          <input type="submit" value="Set" id="submit">
+        </div>
+        <div class="img-half">
+          <img src="../../images/illu.png" alt="">
+        </div>
+          
+        </form>
+      </div>
+      <div class="my-reminders">
+        <h2 class="subtitle">My Reminders</h2>
+        <div class="reminder-container" id="reminder-container">
+          <div class="reminder-card">
+            <div class="reminder-card-header">
+              <h2>Gas payment</h2>
+              <i class="fa-solid fa-trash" title="Delete"></i>
+            </div>
+            <div class="reminder-card-body">
+              <p>I have to pay for the gas</p>
+            </div>
+            <div class="reminder-card-footer">
+              <span>Due date: 12/12/2023</span>
+              <span>Time: 12:00</span>
+            </div>
+          </div>
+          <div class="reminder-card">
+            <div class="reminder-card-header">
+              <h2>Loan payment</h2>
+              <i class="fa-solid fa-trash" title="Delete"></i>
+            </div>
+            <div class="reminder-card-body">
+              <p>We remind you to pay for the loan installment</p>
+            </div>
+            <div class="reminder-card-footer">
+              <span>Due date: 12/12/2023</span>
+              <span>Time: 12:00</span>
+            </div>
+          </div>
+          <div class="reminder-card">
+            <div class="reminder-card-header">
+              <h2>Credit card payment</h2>
+              <i class="fa-solid fa-trash" title="Delete"></i>
+            </div>
+            <div class="reminder-card-body">
+              <p>We remind you to pay your credit card</p>
+            </div>
+            <div class="reminder-card-footer">
+              <span>Due date: 10/10/2023</span>
+              <span>Time: 12:00</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer">&copy; 2023 <span>ShinzoBank</span> All Right Reserved</div>
+</body>
+</html>

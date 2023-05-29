@@ -1,0 +1,152 @@
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/bill-payment-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bill-payment{
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #eee;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+}
+
+.bill-payment h1{
+  color: #222;
+}
+
+.bill-payment p{
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bill-payment hr{
+  margin: 15px 0;
+  border: 1px solid #0170b1;
+  width: 70%;
+}
+
+.bill-payment form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bill-payment .form-control{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.bill-payment .form-control label{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.bill-payment .form-control input, .bill-payment .form-control select{
+  padding: 13px 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  outline: none;
+  width: 400px;
+  font-size: 16px;
+}
+
+textarea{
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  outline: none;
+  min-width: 400px;
+  font-size: 15px;
+  min-height: 100px;
+  font-family: 'open sans' !important;
+}
+
+.bill-payment .form-control input:focus, .bill-payment .form-control select:focus{
+  border: 2px solid var(--main-color);
+}
+
+.bill-payment .form-control label::after{
+  content: "*";
+  color: red;
+  font-size: 15px;
+  margin-left: 3px;
+}
+
+.bill-payment input[type="submit"]{
+  padding: 15px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--main-color);
+  align-self: flex-end;
+}
+
+.input-error{
+  border: 1px solid red!important;
+}
+
+
+.done{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: none;
+}
+
+.done span{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: darkgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.done span i{
+  font-size: 20px;
+  color: #fff;
+}
+
+.done  p{
+  color: darkgreen;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.bill-payment .special{
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;  
+  width: 100%;
+}

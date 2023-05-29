@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../billPayment/billPayment.css">
+  <link rel="stylesheet" href="report.css">
+  <script src="https://kit.fontawesome.com/09d198dc53.js" crossorigin="anonymous" defer></script>
+  <script src="../openAcc/openAcc.js" defer></script>
+  <title>Report Issue</title>
+</head>
+<body>
+  <header style="position: relative;">
+    <div class="container">
+      <h1 class="logo">ShinzoBank</h1>
+
+      <div class="user-logged" id="user-logged">
+        <div class="icons">
+          <i class="fa-solid fa-bars" id="bars" title="Menu"></i>
+          <i class="fa-solid fa-bell" id="bell" title="Notifications"></i>
+
+          <ul class="drop-down" id="drop-down">
+            <li><a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="../../index.html#serv"><i class="fa-solid fa-hand-holding-dollar"></i> Services</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-users"></i> Manage Accounts</a></li>
+            <li><a href="#"><i class="fa-solid fa-credit-card"></i> Manage Cards</a></li>
+            <li><a href="../../index.html#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="#"><i class="fa-solid fa-bug"></i> Report Issue</a></li>
+            <li><a href="../reminders/reminders.html"><i class="fa-solid fa-stopwatch"></i> Reminders</a></li>
+            <li><a href="../../index.html#contact"><i class="fa-solid fa-at"></i> Contact</a></li>
+          </ul>
+
+          <ul class="notifi" id="notifi">
+            <li><a href="#">notification</a></li>
+            <li><a href="#">notification</a></li>
+            <li><a href="#">notification</a></li>
+            <li><a href="#">notification</a></li>
+            <li><a href="#">notification</a></li>
+            <li><a href="#">notification</a></li>
+          </ul>
+        </div>
+        <span>client@shinzo.com <i class="fa-solid fa-right-from-bracket" id="logout" title="Logout"></i></span>        
+      </div>
+    </div>
+  </header>
+  <div class="wraap">
+  <div class="bill-payment report">
+    <h1>Report Issue</h1>
+    <p>We are here to ease your experience</p>
+    <hr>
+    <form>
+      <div class="form-control">
+        <label for="email">Your email</label>
+        <input type="text" id="email" value="client@shinzo.com" disabled>
+      </div>
+
+      <div class="form-control">
+        <label for="datetime">Date and time you first noticed this issue</label>
+        <input type="datetime-local" id="datetime">
+      </div>
+
+      <div class="form-control">
+        <label for="desc">Detailed explanation of the issue</label>
+        <textarea  id="desc" placeholder="Type your explanation here"></textarea>
+      </div>
+
+      <div class="form-control special">
+        <div class="done" id="pending">
+          <span><i class="fa-solid fa-check fa-beat fa-2xs"></i></span>
+          <p>report has successfully submitted</p>
+        </div>
+        <input type="submit" value="Submit" id="submit-request">
+      </div>
+    </form>
+  </div>
+</div>
+  
+  <div class="footer">&copy; 2023 <span>ShinzoBank</span> All Right Reserved</div>
+</body>
+</html>
